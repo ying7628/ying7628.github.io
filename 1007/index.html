@@ -7,13 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>表格 × 圖片練習</h1>
-  <p class="subtitle">目標：熟悉 <span class="code">&lt;table&gt;</span>、合併儲存格（colspan/rowspan）、替代文字（alt）、圖片大小與標題對齊。</p>
-
-  <div class="note">
-    <strong>任務說明：</strong>請把下方「旅行相片一覽」做成一個整齊的圖文表格。<br>
-    1) 每張圖片下方要有標題（地點＋主題）；2) 第一列放分類標籤；3) 用 <span class="code">colspan</span> 或 <span class="code">rowspan</span> 做出至少一次的合併；4) 為每張圖片寫合適的 <span class="code">alt</span>；5) 讓表格在手機上也能水平滾動查看。
-  </div>
 
   <div class="table-wrap">
     <table>
@@ -26,26 +19,23 @@
         </tr>
       </thead>
       <tbody>
-        <!-- TODO: 將第一、二列做成同一個「城市風景」分類（示範一次 rowspan） -->
         <tr>
           <td rowspan="2">城市風景</td>
           <td>
-            <img src="images/pic1.jpg" alt="傍晚的河岸與城市天際線倒影">
+            <img src="pic1.jpg" alt="高樓">
             <div class="caption">建議寬度 480px</div>
           </td>
-          <td><strong>河畔夕照</strong><br>金色陽光灑在河面，倒映城市天際線。</td>
+          <td><strong>高樓大廈</strong><br>城市裡的高樓林立。</td>
           <td>2025-09-01</td>
         </tr>
         <tr>
           <td>
-            <img src="images/pic2.jpg" alt="夜晚燈光點綴的街道與咖啡店">
-            <div class="caption">圖片下方加入 1~2 句描述。</div>
+            <img src="pic2.jpg" alt="街道">
           </td>
-          <td><strong>夜色小徑</strong><br>街角咖啡店透出溫暖光暈。</td>
+          <td><strong>夜色小徑</strong><br>城市街道。</td>
           <td>2025-09-02</td>
         </tr>
 
-        <!-- TODO: 示範一次 colspan，讓「海邊旅行」橫跨兩欄作為小節標題 -->
         <tr>
           <td colspan="4"><strong>海邊旅行</strong>（小節標題，使用 <span class="code">colspan="4"</span> 合併）</td>
         </tr>
@@ -53,7 +43,7 @@
         <tr>
           <td>自然風景</td>
           <td>
-            <img src="images/pic3.jpg" alt="沙灘、海浪與遠方的帆船">
+            <img src="pic3.jpg" alt="沙灘">
             <div class="caption">替代文字（alt）說明畫面重點。</div>
           </td>
           <td><strong>清晨海浪</strong><br>第一道陽光照亮浪花與沙粒。</td>
@@ -63,8 +53,6 @@
     </table>
   </div>
 
-  <div class="footer">
-    小提示：圖片請使用相對路徑 <span class="code">images/檔名.png</span>；若要更換圖片，把新檔案放進 <span class="code">images</span> 資料夾並更新 <span class="code">src</span> 與 <span class="code">alt</span>。
-  </div>
+  
 </body>
 </html>

@@ -1,0 +1,25 @@
+/* Simple styles to resemble a clean demo page */
+:root{
+  --bg:#f7f7f8;
+  --card:#ffffff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0; background:var(--bg); color:#111827; line-height:1.45;
+}
+.site-header{
+  text-align:center; padding:40px 16px 8px; background:linear-gradient(180deg, #ffffffcc, transparent);
+}
+.site-header h1{margin:0;font-size:28px}
+.tagline{margin:8px 0 0;color:var(--muted)}
+.content{max-width:880px;margin:28px auto;padding:0 16px}
+.image-card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08);text-align:center}
+.photo{max-width:100%;height:auto;border-radius:10px;display:inline-block}
+.image-card figcaption{margin-top:12px;color:var(--muted);font-size:14px}
+.notes{margin-top:18px;padding:16px;background:transparent}
+.site-footer{text-align:center;padding:20px;color:var(--muted);font-size:13px}
+@media (min-width:900px){
+  .photo{max-width:720px}
+}

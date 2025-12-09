@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang=zh-hant>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YING's WEBSITE</title>
+
+    <!--1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+    <!--2-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link href="product.css" rel="stylesheet" />
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+
+  </head>
+ 
+ <!--navbars-->
+
+<!--橫幅-->
+<!-- 橫幅：可滾動的圖片橫幅（5張），點擊左右半邊可控制切換，並包含左右按鈕 -->
+<section class="container my-4 position-relative">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+    <!-- indicators (可選) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Banner 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Banner 3">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=4" class="d-block w-100" alt="Banner 4">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=5" class="d-block w-100" alt="Banner 5">
+      </div>
+    </div>
+
+    <!-- 左右按鈕 -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="上一張">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">上一張</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="下一張">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">下一張</span>
+    </button>
+
+    <!-- 可點擊左右半邊控制的透明區（不影響按鈕） -->
+    <div class="carousel-click-area" aria-hidden="true">
+      <div class="click-left" title="上一張"></div>
+      <div class="click-right" title="下一張"></div>
+    </div>
+  </div>
+
+  <style>
+    /* 透明的左右點擊區覆蓋在圖片上，保持按鈕可見與可點選 */
+    #heroCarousel { position: relative; }
+    .carousel-click-area {
+      position: absolute;
+      inset: 0;
+      z-index: 1; /* 保持在圖片上層但低於 Bootstrap 控制按鈕（按鈕 z-index 較高） */
+      pointer-events: none; /* 先禁止，讓各半邊自帶 pointer-events */
+    }
+    .carousel-click-area .click-left,
+    .carousel-click-area .click-right {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      pointer-events: auto; /* 啟用點擊 */
+      cursor: pointer;
+    }
+    .carousel-click-area .click-left { left: 0; }
+    .carousel-click-area .click-right { right: 0; }
+    /* 在小螢幕上，適度增加點擊區高度以利觸控 */
+    @media (max-width: 576px) {
+      .carousel-click-area .click-left,
+      .carousel-click-area .click-right { touch-action: manipulation; }
+    }
+  </style>
+
+  <script>
+    (function () {
+      var carouselEl = document.getElementById('heroCarousel');
+      if (!carouselEl || !window.bootstrap) return;
+      var bs = bootstrap.Carousel.getOrCreateInstance(carouselEl);
+
+      var left = carouselEl.querySelector('.click-left');
+      var right = carouselEl.querySelector('.click-right');
+      if (left) left.addEventListener('click', function (e) { bs.prev(); });
+      if (right) right.addEventListener('click', function (e) { bs.next(); });
+
+      // 支援左右鍵盤操作（選擇性）
+      carouselEl.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') bs.prev();
+        if (e.key === 'ArrowRight') bs.next();
+      });
+      // 使容器可聚焦以接收鍵盤事件
+      carouselEl.tabIndex = 0;
+    })();
+  </script>
+</section>
+<!--作品-->
+
+<!--footer-->

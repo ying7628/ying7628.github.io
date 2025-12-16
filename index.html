@@ -126,6 +126,7 @@
  <!--navbars-->
 <!-- ...existing code... -->
 <!--navbars-->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">YING</a>
@@ -153,7 +154,20 @@
 <!-- ...existing code... -->
 <!--橫幅-->
 <!-- ...existing code... -->
+<!--navbars-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+  <!-- ...existing code... -->
+</nav>
+
+<!-- 新增簡介小標題 -->
+<h2 class="text-center fw-bold my-4">簡介</h2>
+
+
+<!-- ...existing code...
+
+<!-- ...existing code... -->
  <!-- 橫幅：可滾動的圖片橫幅（5張），點擊左右半邊可控制切換，並包含左右按鈕 -->
+  
 <section class="container my-4 position-relative">
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
     <!-- indicators (可選) -->
@@ -250,7 +264,9 @@
 </section>
 <!--作品-->
 <section id="works">
- 
+ <!-- 新增作品集小標題 -->
+  <h2 class="text-center fw-bold my-4">作品集</h2>
+  <p class="text-center text-secondary mb-4" style="font-size: 0.95rem;">點擊圖片查看</p>
       <!-- 六張大圖，3x2 排列 -->
       <div class="container my-5">
         <div class="row g-4">
@@ -289,12 +305,25 @@
 </section>
 
 <!--footer-->
-<footer id="footer">
-  <!-- 你的footer內容放這裡 -->
+<footer id="footer" class="py-4 mt-5 border-top">
+  <div class="container text-center">
+    <h5 class="mb-3">聯絡資訊</h5>
+    <ul class="list-unstyled mb-3">
+      <li><strong>地址：</strong>台北市信義區仁愛路四段123號</li>
+      <li><strong>電話：</strong><a href="tel:+886912345678" class="text-decoration-none text-light">0912-345-678</a></li>
+      <li><strong>信箱：</strong><a href="mailto:ying7628@example.com" class="text-decoration-none text-light">ying7628@example.com</a></li>
+    </ul>
+    <div class="mb-2">
+      <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener" class="me-3 text-light">
+        <i class="bi bi-facebook"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener" class="text-light">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+    </div>
+    <small class="text-secondary">&copy; 2024 YING. All rights reserved.</small>
+  </div>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </footer>
 <!-- ...existing code... -->
-<!--橫幅-->
-
-<!--作品-->
-
-<!--footer-->
